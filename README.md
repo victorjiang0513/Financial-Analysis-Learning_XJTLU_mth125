@@ -3,3 +3,4 @@
 ## MTH125 Analysis Tutor Skill
 
 The reusable MTH125 tutoring skill is available in [`.agents/skills/mth125-analysis-tutor`](.agents/skills/mth125-analysis-tutor). It guides schedule-first, proof-rigorous study of real analysis and includes regression evaluations.
+You may refer to the working pipeline doc attached to the main branch.
