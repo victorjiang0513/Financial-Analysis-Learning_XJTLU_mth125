@@ -1,0 +1,47 @@
+{
+  "skill_name": "mth125-analysis-tutor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "从 teaching schedule 找到 Topic 1，先给我课程总览，不要读取教材。",
+      "expected_output": "正确定位 schedule 并说明老师的教学路线；引用来源和页码；不读取教材或教材缓存。",
+      "files": ["Mth125_schedule_202609061138_29307.pdf"]
+    },
+    {
+      "id": 2,
+      "prompt": "这是今天的课堂笔记。请检查逻辑，并把暂时还没用到的定理做好锚定。",
+      "expected_output": "区分当前核心、未来锚点和待确认内容；检查条件与量词；更新 MTH125_STUDY_INDEX.md。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "检查这道 Problem 的 AI 解答，把逻辑错误变成这个 Topic 后续证明的自查规则。",
+      "expected_output": "内部逐步审查并更新 Topic 错误清单；对用户只显示影响正确性的关键错误及最短修复，不显示审查步骤、正确步骤或通过状态。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "这个 Topic 的 schedule 已经学完了。请按三项标准从练习册里选题。",
+      "expected_output": "内部按综合性、方法普适性、后续铺路价值评分，只输出至少满足两项的入选题；每题用总分和一句理由表示，不默认罗列未入选题。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "带我倒推这道极限题的构造，再写 epsilon-N 证明。",
+      "expected_output": "用 1–4 个短要点给出关键构造，在独立的 Formal Proof (English) 段给出全英语证明；内部完成双重审查，但不显示审查章节、清单或通过表格。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "证明 n 次根号 n 收敛到 1，并检查你选择的 N 是否真的推出最终 epsilon 估计。",
+      "expected_output": "不得从 Bernoulli 线性下界与 n epsilon > 1 错误推出 (1+epsilon)^n > n；应使用足够强的估计，代回验证 N(epsilon)，并用全英语写 Formal Proof。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "给我最精简版本：讲清构造并给正式证明，不要展示你的逻辑审查过程。",
+      "expected_output": "只包含 1–4 个关键思路、必要的全英语 Formal Proof，以及至多一句有价值的中文点拨；不出现逻辑审查、自我检查、通过状态或审查表。",
+      "files": []
+    }
+  ]
+}
